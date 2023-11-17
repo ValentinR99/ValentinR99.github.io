@@ -30,7 +30,7 @@
   align-items: center;
 }
 nav {
-  border: 2px green;
+  border-top: 10px solid #5bae3a;
   height: 80px;
   width: 100%;
   justify-content: space-between;
@@ -111,6 +111,7 @@ nav ul li a:hover {
   font-size: 60px;
   position:fixed;
   cursor: pointer;
+  margin-bottom: 100px;
 }
 .buttonW:hover {
   background-color: #009b39;
@@ -119,6 +120,7 @@ nav ul li a:hover {
 .numHectareas{
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .numHectareas span {
   border: #4b4b4b 2px solid;
@@ -127,25 +129,55 @@ nav ul li a:hover {
   padding: 10px;
 }
 .numHectareas p {
+  margin-top: 20px;
   font-size: 30px;
 }
 /*-----GALERIA-----*/
-.galeria {
-  text-align: center;
-  flex-wrap: wrap;
-  padding-top: 35px;
-  font-size: 22px;
-}
-.galeria h2 {
+.subtitle {
+  font-size: 28px;
   color: #5bae3a;
-  margin-bottom: 35px;
+  text-align: center;
+  margin-top: 25px;
 }
-.galeria div img {
+.contenedorImg {
+  width: 80%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 30px;
+}
+.contenedorImg img {
+  width: 90%;
+  cursor: pointer;
+  transition: 1s;
   margin: auto;
-  width: 300px;
-  height: 250px;
-  border: 2px solid grey;
-  margin-bottom: 25px;
+}
+.contenedorImg img:hover {
+  transform: scale(1.2);
+}
+.ful-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.ful-img img {
+  width: 80%;
+  max-width: 470px;
+}
+.ful-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 /*-----CONTACTO-----*/
 .contacto {
@@ -155,12 +187,16 @@ nav ul li a:hover {
 }
 .contacto h3 {
   color: #f3f3f3;
-  font-size: 35px;
+  font-size: 40px;
+  margin-top: -30px;
 }
 .contacto a {
   display: block;
   margin: 30px;
-  font-size: 40px;
+  font-size: 30px;
+}
+.contacto p {
+  padding-bottom: 50px;
 }
 /*-----FOOTER-----*/
 .footer {
@@ -229,5 +265,17 @@ nav ul li a:hover {
   }
   .intro p {
     padding-bottom: 20px;
+  }
+  /*-----BOTON WHATSAPP-----*/
+  .buttonW {
+    width: 90px;
+    height:90px;
+    font-size: 70px;
+  }
+  /*------CONTACTO-----*/
+  .contacto a {
+    display: block;
+    margin: 30px;
+    font-size: 20px;
   }
 }
