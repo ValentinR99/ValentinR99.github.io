@@ -5,6 +5,23 @@
   padding: 0;
   margin: 0;
 }
+.font1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #062863;
+  text-align: center;
+  font-size: 38px;
+  margin: auto;
+  display: block;
+}
+.subtitle {
+  font-size: 28px;
+  color: #278abf;
+  text-align: center;
+  margin-top: 25px;
+}
+
+
 /*-----MENU-----*/
 .checkbtn {
   font-size: 30px;
@@ -19,18 +36,20 @@
   float: left;
   margin-left: 15px;
   width: 300px;
-  border: 2px red;
+  height: 80px;
+  border: 2px red ;
 }
 .logo:hover {
   opacity: 0.8;
 }
 .logo img {
-  width: 300px;
+  width: 250px;
+  height: 75px;
   justify-content: center;
   align-items: center;
 }
 nav {
-  border-top: 10px solid #5bae3a;
+  border-top: 10px solid #278abf;
   height: 80px;
   width: 100%;
   justify-content: space-between;
@@ -52,29 +71,45 @@ nav ul li a {
   font-size: 24px;
 }
 nav ul li a:hover {
-  border-top: 6px solid #5bae3a;
+  border-top: 6px solid #278abf;
   color: #4b4b4b;
 }
 #check {
   display: none;
 }
+
+
 /*-----PORTADA-----*/
+.img-perfil {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.img-perfil img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 .portada {
   width: 100%;
-  height: 600px;
+  height: 350px;
   object-fit: cover;
+  border-top: 2px #4b4b4b solid;
 }
 .portada img {
   width: 100%;
   height: 100%;
 }
+
+
 /*TEXTO INTRODUCTORIO*/
 .intro {
-  background-color: #5bae3a;
+  background-color: #278abf;
   width: 100%;
   text-align: center;
   font-size: 26px;
-  border: 2px solid #5bae3a;
 }
 .intro h1 {
     color: #f3f3f3;
@@ -83,6 +118,27 @@ nav ul li a:hover {
   margin-top: 20px;
     color: #f3f3f3;
 }
+
+
+/*-----CURSOS-----*/
+.target-contain {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.target {
+  border: #062863 2px solid;
+  margin:15px 15px;
+  width: 17%;
+}
+.target img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
 /*-----BOTON-----*/
 .boton {
   width: 200px;
@@ -102,6 +158,32 @@ nav ul li a:hover {
   border: 4px solid #ff0000;
   cursor: pointer;
 }
+
+
+/*-----BOTON CURSOS-----*/
+.button {
+  margin: 35px;
+  padding: 10px;
+  border: 4px solid #141c3a;
+  border-radius: 25px;
+  width: 150px;
+  font-size: 25px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.button a {
+  text-decoration: none;
+  color: #141c3a;
+}
+.button a:hover {
+  color: #f3f3f3;
+}
+.button:hover {
+  background-color: #062863;
+  color: #f3f3f3;
+}
+
 /*-----BOTON WHATSPP-----*/
 .buttonW {
   background-color:#25D366;
@@ -116,29 +198,9 @@ nav ul li a:hover {
 .buttonW:hover {
   background-color: #009b39;
 }
-/*-----HECTAREAS-----*/
-.numHectareas{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.numHectareas span {
-  border: #4b4b4b 2px solid;
-  font-size: 50px;
-  background-color: #f3f3f3;
-  padding: 10px;
-}
-.numHectareas p {
-  margin-top: 20px;
-  font-size: 30px;
-}
+
+
 /*-----GALERIA-----*/
-.subtitle {
-  font-size: 28px;
-  color: #5bae3a;
-  text-align: center;
-  margin-top: 25px;
-}
 .contenedorImg {
   width: 80%;
   margin: 50px auto 50px;
@@ -179,13 +241,15 @@ nav ul li a:hover {
   color: #fff;
   cursor: pointer;
 }
+
+
 /*-----CONTACTO-----*/
 .contacto {
-  background-color: #5bae3a;
+  background-color: #278abf;
   margin: auto;
   text-align: center;
 }
-.contacto h3 {
+.contacto h4 {
   color: #f3f3f3;
   font-size: 40px;
   margin-top: -30px;
@@ -198,14 +262,18 @@ nav ul li a:hover {
 .contacto p {
   padding-bottom: 50px;
 }
+
+
 /*-----FOOTER-----*/
 .footer {
   text-align: center;
 }
 .footer a {
-  color: #5bae3a;
+  color: #278abf;
   font-size: 26px;
 }
+
+
 /*-----MENU RESPONSIVE-----*/
 @media (max-width: 952px) {
   nav ul li a {
@@ -251,17 +319,25 @@ nav ul li a:hover {
     width: 250px;
   }
   /*-----PORTADA RESPONSIVE-----*/
+  .portada img{
+    width: 100%;
+    height: 150px;
+  }
   .portada {
     width: 100%;
-    height: 300px;
+    height: 155px;
   }
-  .portada img {
-    width: 100%;
-    height: 100%;
+  .logo img {
+    width: 150px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
   }
+
+
   /*TEXTO INTRODUCTORIO*/
   .intro h1 {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .intro p {
     padding-bottom: 20px;
@@ -277,5 +353,17 @@ nav ul li a:hover {
     display: block;
     margin: 30px;
     font-size: 20px;
+  }
+  /*------TARJETAS CURSOS-----*/
+  .target-container {
+    display: block;
+  }
+  .target {
+    width: 80%;
+    margin: auto !important;
+    margin-top: 40px !important;
+  }
+  .img-perfil {
+   padding-top: 30px;
   }
 }
